@@ -66,7 +66,7 @@ const MAX_JSON_BODY_BYTES = 32 * 1024;
 const MAX_PAYMENT_HEADER_BYTES = 8 * 1024;
 const MAX_ACTIVE_CHALLENGES = 1_000;
 const MAX_TASKS = 500;
-const MAX_BATCH_PROOFS = 12;
+const MAX_BATCH_PROOFS = 60;
 const STATIC_FILES = new Map([
   ["/", "index.html"],
   ["/index.html", "index.html"],

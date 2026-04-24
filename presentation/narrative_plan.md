@@ -1,48 +1,29 @@
-# PennyPilot final deck narrative plan
+# PennyPilot video pitch deck plan
 
 ## Audience
 
-Arc/Circle hackathon judges, fintech builders, and infrastructure reviewers.
+Arc/Circle hackathon judges reviewing the final project video and submission package.
 
 ## Objective
 
-Explain why AI finance agents need spend controls, show how PennyPilot turns tiny paid API calls into auditable receipts, and prove that the contract layer is live on Arc Testnet.
+Explain PennyPilot in under four minutes: what problem it solves, how the batch payment flow works, and why the project is verifiable through Circle Gateway x402 and Arc Testnet receipts.
 
 ## Narrative arc
 
-1. AI agents are starting to make finance decisions, but wallets alone are too blunt.
-2. PennyPilot gives every agent task a small budget, per-call cap, provider allowlist, and receipt trail.
-3. The demo shows a compact paid-fact review under a `$0.25` budget.
-4. The contract proof is already live: deployed contract, strict policy task, allowlisted provider, anchored receipt, and 50+ Arc transactions.
-5. The economics matter because the average paid fact is only a fraction of a cent.
-6. The final package is organized around live demo, Arc proof, 50+ transactions, Circle feedback, and the required video flow.
+1. AI finance agents need to buy many tiny paid facts, but payment control and auditability are the hard parts.
+2. PennyPilot gives the user a spend policy: budget, per-call cap, provider allowlist, and selected proof count.
+3. The product flow now supports one batch authorization for the selected proof batch.
+4. Circle Gateway x402 handles payment authorization, while Arc anchors provider-signed receipts.
+5. The proof package is live: deployed app, public GitHub, Arc contract proof, and 50 verified receipt transactions.
 
 ## Slide list
 
-1. Cover: PennyPilot one-liner and proof status.
-2. Problem: agents need policy, not just balances.
-3. Product loop: challenge, payment, fact, receipt, anchor.
-4. Architecture: UI, provider API, contract, Gateway/x402 rail.
-5. Live proof: Arc Testnet contract, task, anchored receipt, and 50+ tx proof.
-6. Demo result: six paid facts, low spend, zero blocked, under budget.
-7. Why it matters: machine spending becomes auditable procurement and sub-cent unit economics.
-8. Submission package: demo URL, verifier commands, video flow, and external links to paste after upload.
+1. Cover: PennyPilot, one-liner, and proof metrics.
+2. Problem: tiny agent spend needs policy, not just a wallet.
+3. Solution: one authorization for a bounded batch of paid proofs.
+4. Payment flow: policy -> x402 -> Gateway -> provider -> Arc.
+5. Proof package: live app, GitHub, Arc proof, 50 tx proof, and verifier commands.
 
-## Visual system
+## Visual direction
 
-White and light gray canvas, black text, green/teal/coral/yellow accents from the app, monospaced hashes, compact fintech cards, and clear process diagrams. All meaningful text, proof links, metrics, and labels remain editable PowerPoint objects.
-
-## Source plan
-
-Use local project artifacts:
-
-- `deployments/arc-testnet.json`
-- `deployments/arc-testnet-task.json`
-- `deployments/arc-testnet-anchor.json`
-- `reports/pennypilot-demo-report.json`
-- `README.md`
-- `docs/demo-script.md`
-
-## Editability plan
-
-Use native PowerPoint text boxes, shapes, and cards. Avoid screenshot-only slides for core claims. Keep proof hashes as editable text.
+Clean fintech/product demo style: light canvas, black typography, green/teal/coral accents, one dark evidence field, and no hackathon-compliance slides. The deck is designed for screen-recorded narration, not as a dense leave-behind.

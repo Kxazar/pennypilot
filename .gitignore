@@ -6,6 +6,8 @@ presentation/PennyPilot-hackathon-demo-v2.*
 presentation/deck-work/
 presentation/previews/
 presentation/previews-pptx/
+presentation/previews-video/
+presentation/previews-video-pptx/
 .env
 .env.local
 .env.*.local

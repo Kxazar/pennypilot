@@ -12,6 +12,7 @@ try {
   const config = await getJson("/api/config");
   assert.equal(config.arc.chainId, 5042002);
   assert.equal(config.actionTarget, 6);
+  assert.equal(config.x402.maxBatchProofs, 60);
   assert.equal(isAddress(config.contract.address), true);
   assert.ok(config.providers.length >= 6);
   const page = await fetch(`${baseUrl}/`);

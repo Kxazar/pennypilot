@@ -14,7 +14,7 @@ const DEPLOY_CARD_GAS_LIMIT = 6500000n;
 const SET_PROVIDERS_GAS_LIMIT = 750000n;
 const FUND_ESCROW_GAS_LIMIT = 450000n;
 const RECORD_SPEND_GAS_LIMIT = 350000n;
-const MAX_BATCH_PROOFS = 12;
+const MAX_BATCH_PROOFS = 60;
 const SPEND_CARD_STORAGE_VERSION = "batch-v1";
 
 const SELECTORS = {
@@ -123,6 +123,7 @@ const elements = {
   budgetInput: document.querySelector("#budgetInput"),
   capInput: document.querySelector("#capInput"),
   taskCountInput: document.querySelector("#taskCountInput"),
+  factIcon: document.querySelector("#factIcon"),
   runButton: document.querySelector("#runButton"),
   runStatus: document.querySelector("#runStatus"),
   resetButton: document.querySelector("#resetButton"),
@@ -1263,6 +1264,7 @@ function renderMetrics() {
   elements.remainingValue.textContent = `${money(remaining)} left`;
   elements.spentValue.textContent = `${money(spent)} spent`;
   elements.callValue.textContent = `${calls} / ${state.taskCount} facts`;
+  elements.factIcon.textContent = state.taskCount;
   elements.avgAction.textContent = `${money(avg)} avg`;
   elements.apiStatus.textContent = state.lastIssue?.status ?? (
     state.walletAddress
