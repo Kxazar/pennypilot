@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">PennyPilot machine spending flow</title>
+  <desc id="desc">A polished diagram showing an AI finance agent spending a small USDC budget on paid fintech facts, receiving signed receipts, and anchoring an audit trail.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7faf9"/>
+      <stop offset="1" stop-color="#e9f0ef"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#111111" flood-opacity="0.11"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#17201d"/>
+    </marker>
+    <style>
+      .font { font-family: Inter, Arial, sans-serif; }
+      .eyebrow { font-size: 23px; font-weight: 850; fill: #087c58; }
+      .title { font-size: 64px; font-weight: 920; fill: #171a1c; }
+      .subtitle { font-size: 25px; font-weight: 500; fill: #5b646b; }
+      .card-title { font-size: 28px; font-weight: 900; fill: #171a1c; }
+      .card-copy { font-size: 20px; font-weight: 520; fill: #5b646b; }
+      .small { font-size: 17px; font-weight: 650; fill: #5b646b; }
+      .label { font-size: 18px; font-weight: 850; fill: #171a1c; }
+      .mono { font-family: Consolas, "SFMono-Regular", monospace; font-size: 18px; font-weight: 700; fill: #0c766e; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#page)"/>
+  <rect x="54" y="48" width="1492" height="804" rx="8" fill="#ffffff" stroke="#d6e0dd" filter="url(#softShadow)"/>
+
+  <text class="font eyebrow" x="105" y="122">PennyPilot</text>
+  <text class="font title" x="105" y="188">Expense cards for AI agents</text>
+  <text class="font subtitle" x="105" y="232">Tiny USDC budgets. Sub-cent paid facts. Signed receipts for every machine purchase.</text>
+
+  <g transform="translate(105 300)">
+    <rect width="330" height="250" rx="8" fill="#f7fbfa" stroke="#d6e0dd"/>
+    <circle cx="62" cy="64" r="36" fill="#087c58"/>
+    <path d="M51 65 L60 74 L76 52" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="font card-title" x="38" y="132">AI finance agent</text>
+    <text class="font card-copy" x="38" y="172">Reviews invoices, merchants,</text>
+    <text class="font card-copy" x="38" y="204">routes, and risk signals.</text>
+    <rect x="38" y="218" width="254" height="1" fill="#d6e0dd"/>
+  </g>
+
+  <g transform="translate(105 590)">
+    <rect width="330" height="150" rx="8" fill="#171a1c"/>
+    <text class="font" x="32" y="50" font-size="25" font-weight="900" fill="#ffffff">$0.25 USDC policy</text>
+    <text class="font" x="32" y="88" font-size="20" font-weight="650" fill="#cbd8d5">Max per call: $0.006</text>
+    <text class="font" x="32" y="120" font-size="20" font-weight="650" fill="#cbd8d5">6 paid fact checks</text>
+  </g>
+
+  <path d="M462 428 C520 428 540 428 598 428" fill="none" stroke="#17201d" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="489" y="382" width="92" height="34" rx="8" fill="#eef3f1" stroke="#d6e0dd"/>
+  <text class="font small" x="508" y="405">402</text>
+
+  <g transform="translate(610 270)">
+    <rect width="420" height="390" rx="8" fill="#f7fbfa" stroke="#d6e0dd"/>
+    <text class="font card-title" x="34" y="56">Paid fact market</text>
+    <text class="font card-copy" x="34" y="92">The agent buys only the facts</text>
+    <text class="font card-copy" x="34" y="122">needed for one decision.</text>
+
+    <g transform="translate(34 150)">
+      <rect width="160" height="58" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+      <circle cx="30" cy="29" r="13" fill="#087c58"/>
+      <text class="font label" x="54" y="36">KYB</text>
+      <rect x="186" width="160" height="58" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+      <circle cx="216" cy="29" r="13" fill="#0c8f91"/>
+      <text class="font label" x="240" y="36">Sanctions</text>
+    </g>
+
+    <g transform="translate(34 225)">
+      <rect width="160" height="58" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+      <circle cx="30" cy="29" r="13" fill="#d85245"/>
+      <text class="font label" x="54" y="36">Invoice</text>
+      <rect x="186" width="160" height="58" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+      <circle cx="216" cy="29" r="13" fill="#e8b923"/>
+      <text class="font label" x="240" y="36">Fraud</text>
+    </g>
+
+    <g transform="translate(34 300)">
+      <rect width="160" height="58" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+      <circle cx="30" cy="29" r="13" fill="#2f7fbc"/>
+      <text class="font label" x="54" y="36">FX quote</text>
+      <rect x="186" width="160" height="58" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+      <circle cx="216" cy="29" r="13" fill="#7a5bdb"/>
+      <text class="font label" x="240" y="36">Identity</text>
+    </g>
+  </g>
+
+  <path d="M1058 428 C1116 428 1136 428 1194 428" fill="none" stroke="#17201d" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="1084" y="382" width="96" height="34" rx="8" fill="#eef3f1" stroke="#d6e0dd"/>
+  <text class="font small" x="1099" y="405">receipt</text>
+
+  <g transform="translate(1205 270)">
+    <rect width="295" height="390" rx="8" fill="#f7fbfa" stroke="#d6e0dd"/>
+    <text class="font card-title" x="34" y="56">Audit trail</text>
+    <text class="font card-copy" x="34" y="92">Every spend can be</text>
+    <text class="font card-copy" x="34" y="122">explained and verified.</text>
+
+    <rect x="34" y="162" width="227" height="50" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+    <text class="font label" x="60" y="194">provider signature</text>
+    <rect x="34" y="228" width="227" height="50" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+    <text class="font label" x="60" y="260">receipt hash</text>
+    <rect x="34" y="294" width="227" height="50" rx="8" fill="#ffffff" stroke="#d6e0dd"/>
+    <text class="font label" x="60" y="326">policy anchor</text>
+  </g>
+
+  <g transform="translate(505 690)">
+    <rect width="590" height="102" rx="8" fill="#eef3f1" stroke="#d6e0dd"/>
+    <text class="font" x="34" y="35" font-size="22" font-weight="850" fill="#087c58">Spend controls run before every call</text>
+    <text class="font" x="34" y="65" font-size="18" font-weight="560" fill="#5b646b">Budget, provider allowlist, per-call cap,</text>
+    <text class="font" x="34" y="88" font-size="18" font-weight="560" fill="#5b646b">and receipt uniqueness.</text>
+  </g>
+
+  <g transform="translate(1130 690)">
+    <rect width="370" height="102" rx="8" fill="#087c58"/>
+    <text class="font" x="34" y="36" font-size="25" font-weight="950" fill="#ffffff">6 paid facts</text>
+    <text class="font" x="34" y="66" font-size="21" font-weight="750" fill="#e3f4ef">under $0.25 total spend</text>
+  </g>
+
+</svg>

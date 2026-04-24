@@ -1,0 +1,29 @@
+{
+  "name": "pennypilot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "contracts:compile": "node scripts/compile-contracts.mjs",
+    "contracts:deploy:arc": "node scripts/deploy-preview.mjs",
+    "contracts:setup:arc": "node scripts/setup-contract.mjs",
+    "contracts:create-task:arc": "node scripts/create-policy-task.mjs",
+    "contracts:anchor:arc": "node scripts/anchor-receipt.mjs",
+    "contracts:seed-50:arc": "node scripts/seed-50-onchain-receipts.mjs",
+    "contracts:verify-50:arc": "node scripts/verify-50-onchain-receipts.mjs",
+    "contracts:verify:arc": "node scripts/verify-arc-proof.mjs",
+    "contracts:demo:arc": "npm run contracts:setup:arc && npm run contracts:create-task:arc && npm run contracts:anchor:arc",
+    "demo:report": "node scripts/run-demo-report.mjs",
+    "test": "node scripts/test-app.mjs"
+  },
+  "devDependencies": {
+    "solc": "^0.8.34"
+  },
+  "dependencies": {
+    "@circle-fin/x402-batching": "^3.0.2",
+    "@x402/core": "^2.10.0",
+    "@x402/evm": "^2.10.0",
+    "viem": "^2.48.1"
+  }
+}

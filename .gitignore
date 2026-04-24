@@ -1,0 +1,14 @@
+node_modules/
+artifacts/
+tmp/
+presentation/build/
+presentation/PennyPilot-hackathon-demo-v2.*
+presentation/deck-work/
+presentation/previews/
+presentation/previews-pptx/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+
+.vercel

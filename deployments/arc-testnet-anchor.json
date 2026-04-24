@@ -1,0 +1,17 @@
+{
+  "network": "arc-testnet",
+  "chainId": 5042002,
+  "contractAddress": "0x4c8E7Ae58D71130185dE198Af9285e65bB333047",
+  "taskId": "1",
+  "providerId": "sanctions",
+  "providerAddress": "0xb17B9766Fc18E116B04dFdA352afc639C7cAdB13",
+  "agentAddress": "0x9A85Ac1C8c94DCe380f972eb97F91957fb58Eec2",
+  "amountUnits": "3664",
+  "requestHash": "0x2b9db223861623f412f51c4c602ae2a451d18da3beb5e3576ec5cf907230ed25",
+  "receiptHash": "0xb547677f15d71c38190c5ddcb00ccdd271830b74ad4347f7f4f4eaa9d4ad04c3",
+  "receiptStructHash": "0xbeff5d03d9fc5025d834ef5f627d470252bfde7ee6fbb9d4db341c8b00027772",
+  "contractDigest": "0x54d82e8631c5792e6df118919f91b76aea251d88a58b1af5f7262ca386a8097f",
+  "transactionHash": "0x60064479e955f2b9474665c3ea2e1f8150f7dea3677ca10373ba7778a128f996",
+  "anchoredAt": "2026-04-21T16:21:15.799Z",
+  "explorerUrl": "https://testnet.arcscan.app/tx/0x60064479e955f2b9474665c3ea2e1f8150f7dea3677ca10373ba7778a128f996"
+}

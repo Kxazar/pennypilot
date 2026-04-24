@@ -1,0 +1,306 @@
+{
+  "app": "PennyPilot",
+  "generatedAt": "2026-04-22T07:09:44.148Z",
+  "baseUrl": "http://127.0.0.1:4173",
+  "scenarioKey": "invoice",
+  "actionTarget": 6,
+  "config": {
+    "chainId": 5042002,
+    "contract": {
+      "address": "0x4c8E7Ae58D71130185dE198Af9285e65bB333047",
+      "previewAddress": "0xaec0000000000000000000000000000000000420",
+      "source": "arc-testnet-deployment",
+      "deploymentTx": "0x5bb0754c0b95421797eae3bcd96199ab55f8534e59bdf36c9a5b218e4849a1bb",
+      "strictPolicyFunction": "createStrictPolicyTask",
+      "receiptFunction": "recordSpendWithProviderSignature"
+    },
+    "proof": {
+      "deployment": {
+        "network": "arc-testnet",
+        "chainId": 5042002,
+        "contractAddress": "0x4c8E7Ae58D71130185dE198Af9285e65bB333047",
+        "transactionHash": "0x5bb0754c0b95421797eae3bcd96199ab55f8534e59bdf36c9a5b218e4849a1bb",
+        "explorerUrl": "https://testnet.arcscan.app/address/0x4c8e7ae58d71130185de198af9285e65bb333047"
+      },
+      "task": {
+        "taskId": "1",
+        "agent": "0x9A85Ac1C8c94DCe380f972eb97F91957fb58Eec2",
+        "budgetUnits": "250000",
+        "maxPerCallUnits": "6000",
+        "transactionHash": "0x86a4d76dddead84017d1d49c585c1cf8e647b53564832e7809b77b3f788eb63b",
+        "explorerUrl": "https://testnet.arcscan.app/tx/0x86a4d76dddead84017d1d49c585c1cf8e647b53564832e7809b77b3f788eb63b"
+      },
+      "anchor": {
+        "taskId": "1",
+        "providerId": "sanctions",
+        "providerAddress": "0xb17B9766Fc18E116B04dFdA352afc639C7cAdB13",
+        "agentAddress": "0x9A85Ac1C8c94DCe380f972eb97F91957fb58Eec2",
+        "amountUnits": "3664",
+        "receiptHash": "0xb547677f15d71c38190c5ddcb00ccdd271830b74ad4347f7f4f4eaa9d4ad04c3",
+        "receiptStructHash": "0xbeff5d03d9fc5025d834ef5f627d470252bfde7ee6fbb9d4db341c8b00027772",
+        "contractDigest": "0x54d82e8631c5792e6df118919f91b76aea251d88a58b1af5f7262ca386a8097f",
+        "transactionHash": "0x60064479e955f2b9474665c3ea2e1f8150f7dea3677ca10373ba7778a128f996",
+        "explorerUrl": "https://testnet.arcscan.app/tx/0x60064479e955f2b9474665c3ea2e1f8150f7dea3677ca10373ba7778a128f996"
+      }
+    }
+  },
+  "task": {
+    "id": 1,
+    "scenarioKey": "invoice",
+    "label": "Nova Freight invoice",
+    "fundingMode": "simulated",
+    "agentAddress": "0xaec0000000000000000000000000000000000001",
+    "budget": 0.25,
+    "budgetUnits": "250000",
+    "maxPerCall": 0.006,
+    "maxPerCallUnits": "6000",
+    "spent": 0.023308,
+    "spentUnits": "23308",
+    "remaining": 0.226692,
+    "denied": 0,
+    "expiresAt": "2026-04-22T07:39:44.109Z",
+    "purposeHash": "0x9a988eda6a700814ce2f556aaaaa665d47fb3dc9024ec416c3dcae06dceaab97",
+    "receiptCount": 6,
+    "providerRevenue": {
+      "kyb": {
+        "amount": 0.004537,
+        "amountUnits": "4537"
+      },
+      "sanctions": {
+        "amount": 0.003823,
+        "amountUnits": "3823"
+      },
+      "invoice": {
+        "amount": 0.002999,
+        "amountUnits": "2999"
+      },
+      "risk": {
+        "amount": 0.005109,
+        "amountUnits": "5109"
+      },
+      "fx": {
+        "amount": 0.002225,
+        "amountUnits": "2225"
+      },
+      "identity": {
+        "amount": 0.004615,
+        "amountUnits": "4615"
+      }
+    }
+  },
+  "summary": {
+    "calls": 6,
+    "spent": 0.023308000000000002,
+    "averagePaidAction": 0.003884666666666667,
+    "denied": 0,
+    "remaining": 0.226692,
+    "providers": {
+      "invoice": {
+        "calls": 1,
+        "amount": 0.002999,
+        "amountUnits": 2999
+      },
+      "kyb": {
+        "calls": 1,
+        "amount": 0.004537,
+        "amountUnits": 4537
+      },
+      "sanctions": {
+        "calls": 1,
+        "amount": 0.003823,
+        "amountUnits": 3823
+      },
+      "identity": {
+        "calls": 1,
+        "amount": 0.004615,
+        "amountUnits": 4615
+      },
+      "risk": {
+        "calls": 1,
+        "amount": 0.005109,
+        "amountUnits": 5109
+      },
+      "fx": {
+        "calls": 1,
+        "amount": 0.002225,
+        "amountUnits": 2225
+      }
+    }
+  },
+  "receipts": [
+    {
+      "providerId": "invoice",
+      "provider": "ProofDesk",
+      "providerAddress": "0xF7043539688ab8EDAE7087a5f99df81E4888376F",
+      "purpose": "invoice duplicate check",
+      "amount": 0.002999,
+      "amountUnits": "2999",
+      "requestHash": "0x362ae0ca04acb6aa82c47a3948a5a3cddebdcab934aa79d3ee5867002c2fef53",
+      "receiptHash": "0x28cd767603fd7e343cda0882c41c560c733f2e96b496045751d54ffa699d1046",
+      "receiptStructHash": "0xc3cdd581ffb2ea1dfc245ac6686a46c12d490113e2f2d62812a35fc467330098",
+      "contractDigest": "0x0dec6674f59280a2db2f7d5b709ea384aff9e0958a35572c66e10671c030761d",
+      "providerSignature": "0x04a84b6a6ae2a20625975fca0b56a7022c86fe4120739b8034d10a8b8d51a18b252544e845d392de0f68fe200c0970f8c877b0d5556699bd894d7e530af4daa61c",
+      "paymentVerification": "preview-challenge-match",
+      "settledAt": "2026-04-22T07:09:44.119Z",
+      "fact": {
+        "id": "d67f3bbc-da42-47b5-ae8b-a831a87a59bc",
+        "providerId": "invoice",
+        "provider": "ProofDesk",
+        "category": "Documents",
+        "purpose": "invoice duplicate check",
+        "scenario": "Nova Freight invoice",
+        "verdict": "usable",
+        "confidence": 90,
+        "qualityLift": 0.4983,
+        "riskDrop": 0.498,
+        "latency": 238,
+        "evidence": "invoice unique for invoice"
+      }
+    },
+    {
+      "providerId": "kyb",
+      "provider": "KybTrail",
+      "providerAddress": "0x19EA7b6C0bf8046Db1Bcc925b38a4a2c95037dB5",
+      "purpose": "vendor KYB refresh",
+      "amount": 0.004537,
+      "amountUnits": "4537",
+      "requestHash": "0xe3f9e17a917d7f2dc87872b6caab79361dbc3e7a7adf84be29c9bf5c1c7f8168",
+      "receiptHash": "0x5666b5a594a1c600afa0664663735112bfa549e1a826a7a37c8eec52ec88d7ef",
+      "receiptStructHash": "0x4a6a0190779d00fd4e078ea6d28d92d51bac2b9b09b15376e99893def7f2973f",
+      "contractDigest": "0x4a0b902adb9483684a5bb772f8de570be6f5091675080ee2063c2bbfce53c768",
+      "providerSignature": "0x853729fb1c9133bc684436e1d34ae3dcbed577d47108f0dde8ef9e666b46752b3e5c72784830189cfa993a2272d23275f642ffaa1bf739c37cb0399e1181c19d1c",
+      "paymentVerification": "preview-challenge-match",
+      "settledAt": "2026-04-22T07:09:44.124Z",
+      "fact": {
+        "id": "74c87937-d172-4af1-bb73-3d72bf5b0027",
+        "providerId": "kyb",
+        "provider": "KybTrail",
+        "category": "KYB",
+        "purpose": "vendor KYB refresh",
+        "scenario": "Nova Freight invoice",
+        "verdict": "clear",
+        "confidence": 92,
+        "qualityLift": 0.8226,
+        "riskDrop": 0.4853,
+        "latency": 123,
+        "evidence": "beneficial owner matched for invoice"
+      }
+    },
+    {
+      "providerId": "sanctions",
+      "provider": "ClearList",
+      "providerAddress": "0xb17B9766Fc18E116B04dFdA352afc639C7cAdB13",
+      "purpose": "sanctions screen",
+      "amount": 0.003823,
+      "amountUnits": "3823",
+      "requestHash": "0x17039e5d8c2e8b4a8adb8747569e078834c5fe6f332f2ae82854149159a9b875",
+      "receiptHash": "0x8338197a2d4db19b7bb4e542e72bac139cd6095c83b2430241bc1f5bcbc7ac7d",
+      "receiptStructHash": "0xfef65e41a0def6435e804c04d00e2aca9ef962f2b2490c5db5aeb76b3fa4ff00",
+      "contractDigest": "0x67d597f7d914be5bb645c09257f3b47157e2ff01f38aaaaa77bf54c786a1b860",
+      "providerSignature": "0x2e7eea58e0180801518002f76b6751bd0164eb830e19fc587a7d29d1544ac9671fb6f263ad14d6eae11b61138883f90ac82272600974eaa8f410239e889935531c",
+      "paymentVerification": "preview-challenge-match",
+      "settledAt": "2026-04-22T07:09:44.130Z",
+      "fact": {
+        "id": "e3d6b12e-89cf-4cc7-813f-cfbbbe737ec7",
+        "providerId": "sanctions",
+        "provider": "ClearList",
+        "category": "Compliance",
+        "purpose": "sanctions screen",
+        "scenario": "Nova Freight invoice",
+        "verdict": "clear",
+        "confidence": 97,
+        "qualityLift": 0.7015,
+        "riskDrop": 0.9029,
+        "latency": 147,
+        "evidence": "country risk normal for invoice"
+      }
+    },
+    {
+      "providerId": "identity",
+      "provider": "AccountLock",
+      "providerAddress": "0x29765470D52D39c803DFcA4b390bbe17FC172446",
+      "purpose": "bank account match",
+      "amount": 0.004615,
+      "amountUnits": "4615",
+      "requestHash": "0x0b8419c611228c8f95c688e8dfa930ec6893435ca4129fa2b182a0a6f34f1ac0",
+      "receiptHash": "0x9288d9fc74fce30d12b90e44bbe3cf5d3467c5f2327181d3a68e0e31a386dafa",
+      "receiptStructHash": "0x10c1cf2f49427da479553e0989347e960fa3a9ac14b5f3e3a39d82dc40d1b9d2",
+      "contractDigest": "0x2dcb2ea8068d43349e4806e512af2252cef4b1ca1e0ab72ab20c129afb23f2a1",
+      "providerSignature": "0x831b431dcc714b7c20b5d76b9a834911ba6ef0fea62daef3e2b6d996152155b03af249a37d0e9056ccb3b678b5e64ddefcbd9103188981e736caa2a8ec3698411c",
+      "paymentVerification": "preview-challenge-match",
+      "settledAt": "2026-04-22T07:09:44.137Z",
+      "fact": {
+        "id": "3a5bc5ce-eea7-4cbc-a3ad-6ed23f66e7ed",
+        "providerId": "identity",
+        "provider": "AccountLock",
+        "category": "Identity",
+        "purpose": "bank account match",
+        "scenario": "Nova Freight invoice",
+        "verdict": "clear",
+        "confidence": 97,
+        "qualityLift": 0.4314,
+        "riskDrop": 0.4218,
+        "latency": 164,
+        "evidence": "account owner matched for invoice"
+      }
+    },
+    {
+      "providerId": "risk",
+      "provider": "FraudLens",
+      "providerAddress": "0x2F0f2cC4B68cFacf2D7bCAB266e8A73388886662",
+      "purpose": "delivery proof",
+      "amount": 0.005109,
+      "amountUnits": "5109",
+      "requestHash": "0xbee6ba89c01b8b33a2ef9e133725b28aa4673a9edf5673138969ddb73d2bbedd",
+      "receiptHash": "0xc21abc2930a5947fff221bbcc0c2748645372496b9373da013263b7ecc897f17",
+      "receiptStructHash": "0x4f3de2bc204cece8f7ee3e90f8c494afa3c214e2aaa3035d0fce112bca083542",
+      "contractDigest": "0x6adf67d59ae7a990b28f9b11311375c2bf7047202e6fa79ac516de9792e29a51",
+      "providerSignature": "0x4046f5c61e0710b6e2e24a63c4f03b134eaed48dd5aca1ea57d89e454daf394e23785c8bd794851b23bfaaa49fe5271a62e80f737a376d669700669dbb0e1b461b",
+      "paymentVerification": "preview-challenge-match",
+      "settledAt": "2026-04-22T07:09:44.143Z",
+      "fact": {
+        "id": "01431e0d-0931-4375-83fd-a97784c4a13d",
+        "providerId": "risk",
+        "provider": "FraudLens",
+        "category": "Risk",
+        "purpose": "delivery proof",
+        "scenario": "Nova Freight invoice",
+        "verdict": "usable",
+        "confidence": 90,
+        "qualityLift": 0.4529,
+        "riskDrop": 0.9658,
+        "latency": 91,
+        "evidence": "device pattern stable for invoice"
+      }
+    },
+    {
+      "providerId": "fx",
+      "provider": "QuoteMesh",
+      "providerAddress": "0x102044a6Adb543219d80036cD9DcFB441a634947",
+      "purpose": "FX route check",
+      "amount": 0.002225,
+      "amountUnits": "2225",
+      "requestHash": "0xc808483fac2b8dbc1d0332cba79238eaf91ebd412950d31a74c083af59991b11",
+      "receiptHash": "0x710a0b635380955cde2bb1dac80991ece9220176c77a8a2d56a59530d8f90cea",
+      "receiptStructHash": "0x7fbe1b84d97c475199caa81eb70ccc8e33ac39b021c0e7844264399108b9777d",
+      "contractDigest": "0xf89fa21ba69908592ff66e24a4e82da07f4b84ae83a87b2081aaf9e696f27166",
+      "providerSignature": "0xe482ca06a444af9796875e273fe301ef100c505a82f5a142e6addb26de0dfad00dc7e13195f7a95e02860bca952932a1edd7df9017c8c34dc343180ba03c08b41c",
+      "paymentVerification": "preview-challenge-match",
+      "settledAt": "2026-04-22T07:09:44.148Z",
+      "fact": {
+        "id": "372e74f5-bc84-442d-be4e-22292fd0efbc",
+        "providerId": "fx",
+        "provider": "QuoteMesh",
+        "category": "FX",
+        "purpose": "FX route check",
+        "scenario": "Nova Freight invoice",
+        "verdict": "review",
+        "confidence": 85,
+        "qualityLift": 0.5014,
+        "riskDrop": 0.4269,
+        "latency": 178,
+        "evidence": "quote fresh for invoice"
+      }
+    }
+  ]
+}

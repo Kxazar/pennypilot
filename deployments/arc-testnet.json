@@ -1,0 +1,12 @@
+{
+  "network": "arc-testnet",
+  "chainId": 5042002,
+  "rpcUrl": "https://rpc.testnet.arc.network",
+  "deployer": "0x9A85Ac1C8c94DCe380f972eb97F91957fb58Eec2",
+  "asset": "0x0000000000000000000000000000000000000000",
+  "transactionHash": "0x5bb0754c0b95421797eae3bcd96199ab55f8534e59bdf36c9a5b218e4849a1bb",
+  "contractAddress": "0x4c8e7ae58d71130185de198af9285e65bb333047",
+  "blockNumber": "38319551",
+  "deployedAt": "2026-04-21T16:14:59.760Z",
+  "explorerUrl": "https://testnet.arcscan.app/address/0x4c8e7ae58d71130185de198af9285e65bb333047"
+}

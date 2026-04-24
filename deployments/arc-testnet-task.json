@@ -1,0 +1,14 @@
+{
+  "network": "arc-testnet",
+  "chainId": 5042002,
+  "contractAddress": "0x4c8E7Ae58D71130185dE198Af9285e65bB333047",
+  "taskId": "1",
+  "agent": "0x9A85Ac1C8c94DCe380f972eb97F91957fb58Eec2",
+  "budgetUnits": "250000",
+  "maxPerCallUnits": "6000",
+  "expiresAt": "1776874851",
+  "purposeHash": "0x730fb42b0c94e6a4196d453abc49bf93bf7525512065ada732e5d219f6365d83",
+  "transactionHash": "0x86a4d76dddead84017d1d49c585c1cf8e647b53564832e7809b77b3f788eb63b",
+  "createdAt": "2026-04-21T16:20:55.816Z",
+  "explorerUrl": "https://testnet.arcscan.app/tx/0x86a4d76dddead84017d1d49c585c1cf8e647b53564832e7809b77b3f788eb63b"
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PennyPilot</title>
+    <meta
+      name="description"
+      content="A spend-control terminal for AI agents buying paid financial facts with USDC receipts."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="PennyPilot home">
+          <span class="brand-mark">P</span>
+          <span>PennyPilot</span>
+        </a>
+        <button id="walletButton" class="network-pill" type="button" aria-label="connect wallet">
+          <span class="pulse-dot"></span>
+          <span id="networkStatusLabel">Connect wallet</span>
+        </button>
+      </header>
+
+      <section class="terminal" aria-label="PennyPilot terminal">
+        <nav class="terminal-tabs" aria-label="terminal mode">
+          <button class="tab is-active" type="button">Review</button>
+          <button class="tab" type="button" disabled>Receipts</button>
+          <button class="tab" type="button" disabled>Proof</button>
+          <button class="icon-button" type="button" aria-label="settings">...</button>
+        </nav>
+
+        <div class="swap-field">
+          <div class="field-head">
+            <span>Budget</span>
+            <span id="remainingValue">$0.2500 left</span>
+          </div>
+          <div class="amount-row">
+            <input
+              id="budgetInput"
+              class="amount-input"
+              type="number"
+              min="0.000001"
+              step="any"
+              value="0.25"
+              aria-label="task budget"
+            >
+            <div class="token-pill">
+              <img
+                class="token-img"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232775ca'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='M38 23c-2-2-5-3-8-2-4 1-6 4-5 7 1 4 5 4 8 5 3 1 4 2 4 4 0 3-3 5-7 4-3 0-5-1-7-3' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M32 16v32' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"
+                alt=""
+              >
+              <strong>USDC</strong>
+            </div>
+          </div>
+          <div class="field-foot">
+            <span id="spentValue">$0.0000 spent</span>
+            <span>Policy budget</span>
+          </div>
+        </div>
+
+        <div class="switch-row">
+          <button class="switch-button" type="button" aria-label="review direction">&#8595;</button>
+        </div>
+
+        <div class="swap-field lower">
+          <div class="field-head">
+            <span>Review</span>
+            <span id="callValue">0 / 6 facts</span>
+          </div>
+          <div class="amount-row">
+            <select id="taskSelect" class="case-select" aria-label="review case">
+              <option value="invoice">Nova Freight invoice</option>
+              <option value="merchant">Merchant onboarding</option>
+              <option value="treasury">Treasury payout route</option>
+            </select>
+            <div class="token-pill accent">
+              <span class="fact-icon">6</span>
+              <strong>Facts</strong>
+            </div>
+          </div>
+          <div class="cap-row">
+            <label for="capInput">Max per fact</label>
+            <input id="capInput" type="number" min="0.001" max="0.05" step="0.001" value="0.006">
+            <label for="taskCountInput">Facts</label>
+            <input id="taskCountInput" type="number" min="1" step="1" value="6">
+            <span id="avgAction">$0.0000 avg</span>
+          </div>
+        </div>
+
+        <button id="runButton" class="primary-action" type="button">Run review</button>
+        <div id="runStatus" class="run-status" hidden aria-live="polite"></div>
+
+        <div class="terminal-meta" aria-label="review status">
+          <span id="decisionBadge">Idle</span>
+          <span id="apiStatus">Checking API</span>
+          <span id="taskIdValue">No task</span>
+          <span id="providerSigValue">No receipt</span>
+        </div>
+
+        <section class="memo-panel" aria-label="agent memo">
+          <h1 id="memoTitle">Ready for a policy-bound review</h1>
+          <p id="memoBody">
+            Pick a case, set a USDC budget, and let the agent buy only the facts it needs.
+          </p>
+        </section>
+
+        <div id="receiptBody" class="receipt-list" aria-live="polite">
+          <div class="empty-state">No paid facts yet.</div>
+        </div>
+
+        <details class="proof-drawer">
+          <summary>
+            <span>Audit proof</span>
+            <strong id="proofStatus">Loading</strong>
+          </summary>
+          <div class="proof-list">
+            <a id="proofContractLink" href="#" target="_blank" rel="noreferrer">
+              <span>Contract</span>
+              <strong>not deployed</strong>
+            </a>
+            <a id="proofTaskLink" href="#" target="_blank" rel="noreferrer">
+              <span>Task</span>
+              <strong>not created</strong>
+            </a>
+            <a id="proofAnchorLink" href="#" target="_blank" rel="noreferrer">
+              <span>Receipt tx</span>
+              <strong>not anchored</strong>
+            </a>
+            <div class="proof-hash">
+              <span>Receipt hash</span>
+              <strong id="proofReceiptHash">waiting</strong>
+            </div>
+          </div>
+        </details>
+
+        <div class="footer-actions">
+          <button id="resetButton" type="button">Reset</button>
+          <button id="exportButton" type="button">Export report</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="client.js"></script>
+  </body>
+</html>

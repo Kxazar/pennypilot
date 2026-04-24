@@ -1,0 +1,87 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/config.mjs",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 300,
+        "includeFiles": "{artifacts/**,deployments/**}"
+      }
+    },
+    {
+      "src": "api/cards.mjs",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 300,
+        "includeFiles": "{artifacts/**,deployments/**}"
+      }
+    },
+    {
+      "src": "api/providers.mjs",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 300,
+        "includeFiles": "{artifacts/**,deployments/**}"
+      }
+    },
+    {
+      "src": "api/gateway.mjs",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 300,
+        "includeFiles": "{artifacts/**,deployments/**}"
+      }
+    },
+    {
+      "src": "api/gateway-batch.mjs",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 300,
+        "includeFiles": "{artifacts/**,deployments/**}"
+      }
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "client.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles.css",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/api/config$",
+      "dest": "/api/config.mjs"
+    },
+    {
+      "src": "^/api/cards$",
+      "dest": "/api/cards.mjs"
+    },
+    {
+      "src": "^/api/providers/[^/]+/facts$",
+      "dest": "/api/providers.mjs"
+    },
+    {
+      "src": "^/api/gateway/balance$",
+      "dest": "/api/gateway.mjs"
+    },
+    {
+      "src": "^/api/gateway/batch-facts$",
+      "dest": "/api/gateway-batch.mjs"
+    },
+    {
+      "src": "^/$",
+      "dest": "/index.html"
+    }
+  ]
+}
