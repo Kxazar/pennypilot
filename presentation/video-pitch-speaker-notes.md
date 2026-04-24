@@ -16,6 +16,6 @@ Here the user sets the policy: task budget, per-call cap, provider allowlist, an
 
 The flow starts with policy. A paid API returns an x402 payment request, the wallet signs once, Circle Gateway verifies the authorization, providers return signed receipts, and PennyPilot anchors the receipt batch on Arc. In the video, the important proof is Circle-side payment authorization followed by Arc-side receipt verification.
 
-## Slide 5: Proof Package
+## Slide 5: Agentic Commerce With Guardrails
 
-The project is live and verifiable. The app is deployed, the GitHub repository is public, and the Arc proof includes 50 verified receipt transactions. The repository also includes verifier commands for the Arc proof and the 50-transaction proof.
+PennyPilot is a reusable pattern for agentic commerce with guardrails. It lets agents buy what they need without letting spend go dark: the user sets policy, the payment happens through x402, providers return signed receipts, and Arc keeps the audit trail verifiable. The live system supports up to 60 proofs in a batch and includes a 50-plus transaction proof.

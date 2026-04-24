@@ -14,7 +14,7 @@ Explain PennyPilot in under four minutes: what problem it solves, how the batch 
 2. PennyPilot gives the user a spend policy: budget, per-call cap, provider allowlist, and selected proof count.
 3. The product flow now supports one batch authorization for the selected proof batch.
 4. Circle Gateway x402 handles payment authorization, while Arc anchors provider-signed receipts.
-5. The proof package is live: deployed app, public GitHub, Arc contract proof, and 50 verified receipt transactions.
+5. The closing frames PennyPilot as an agentic commerce primitive: controlled, API-native, auditable, and reusable.
 
 ## Slide list
 
@@ -22,7 +22,7 @@ Explain PennyPilot in under four minutes: what problem it solves, how the batch 
 2. Problem: tiny agent spend needs policy, not just a wallet.
 3. Solution: one authorization for a bounded batch of paid proofs.
 4. Payment flow: policy -> x402 -> Gateway -> provider -> Arc.
-5. Proof package: live app, GitHub, Arc proof, 50 tx proof, and verifier commands.
+5. Product thesis: agentic commerce with guardrails, supported by live proof signals.
 
 ## Visual direction
 
