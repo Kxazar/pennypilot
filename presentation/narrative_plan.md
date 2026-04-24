@@ -1,8 +1,8 @@
-# PennyPilot video pitch deck plan
+# PennyPilot pitch deck plan
 
 ## Audience
 
-Arc/Circle hackathon judges reviewing the final project video and submission package.
+Product reviewers evaluating whether PennyPilot is a working, verifiable agent-payment workflow.
 
 ## Objective
 
@@ -26,4 +26,4 @@ Explain PennyPilot in under four minutes: what problem it solves, how the batch 
 
 ## Visual direction
 
-Clean fintech/product demo style: light canvas, black typography, green/teal/coral accents, one dark evidence field, and no hackathon-compliance slides. The deck is designed for screen-recorded narration, not as a dense leave-behind.
+Clean fintech/product demo style: light canvas, black typography, green/teal/coral accents, one dark evidence field, and no compliance-report slides. The deck is designed for a concise product walkthrough, not as a dense leave-behind.

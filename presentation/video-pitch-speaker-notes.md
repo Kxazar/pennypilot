@@ -1,4 +1,4 @@
-# PennyPilot video pitch speaker notes
+# PennyPilot pitch speaker notes
 
 ## Slide 1: PennyPilot
 
@@ -14,7 +14,7 @@ Here the user sets the policy: task budget, per-call cap, provider allowlist, an
 
 ## Slide 4: Payment First, Proof Next
 
-The flow starts with policy. A paid API returns an x402 payment request, the wallet signs once, Circle Gateway verifies the authorization, providers return signed receipts, and PennyPilot anchors the receipt batch on Arc. In the video, the important proof is Circle-side payment authorization followed by Arc-side receipt verification.
+The flow starts with policy. A paid API returns an x402 payment request, the wallet signs once, Circle Gateway verifies the authorization, providers return signed receipts, and PennyPilot anchors the receipt batch on Arc. The important proof is Circle-side payment authorization followed by Arc-side receipt verification.
 
 ## Slide 5: Agentic Commerce With Guardrails
 
